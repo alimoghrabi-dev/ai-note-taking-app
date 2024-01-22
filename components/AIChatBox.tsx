@@ -72,6 +72,7 @@ const AIChatBox = ({ open, onClose }: AIChatBoxProps) => {
             <ChatMessage
               message={{
                 role: "assistant",
+                //@ts-ignore
                 content: [...Array(numDots)].map((_, index) => "."),
               }}
             />
