@@ -25,7 +25,9 @@ const ChatMessage = ({
       <p
         className={cn(
           "whitespace-pre-line rounded-md border px-3 py-1.5",
-          isAIMessage ? "bg-gray-200" : "bg-primary text-primary-foreground",
+          isAIMessage
+            ? "bg-gray-200 dark:bg-gray-800"
+            : "bg-primary text-primary-foreground dark:text-gray-50",
         )}
       >
         {content}

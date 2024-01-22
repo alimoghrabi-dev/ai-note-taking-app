@@ -18,11 +18,16 @@ export default function Home() {
           QuantumNotes
         </span>
       </div>
-      <p className="font-sm max-w-sm text-center text-gray-700 sm:max-w-prose">
+      <p className="font-sm max-w-sm text-center text-gray-700 dark:text-gray-500 sm:max-w-prose">
         An Intelligent note taking app with AI integration, build with OpenAI,
         Pinecone, Next.js, and more.
       </p>
-      <Link href={"/notes"} className={cn(buttonVariants({ size: "lg" }))}>
+      <Link
+        href={"/notes"}
+        className={cn(
+          buttonVariants({ size: "lg", className: "text-gray-50" }),
+        )}
+      >
         Open
       </Link>
     </main>

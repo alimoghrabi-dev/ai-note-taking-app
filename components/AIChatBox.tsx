@@ -111,7 +111,7 @@ const AIChatBox = ({ open, onClose }: AIChatBoxProps) => {
             placeholder="Ask anything..."
             className="border-slate-300 outline-none transition-all focus-visible:border-primary focus-visible:ring-0"
           />
-          <Button type="submit" disabled={isLoading}>
+          <Button type="submit" disabled={isLoading} className="text-gray-50">
             {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Send"}
           </Button>
         </form>
