@@ -2,6 +2,7 @@ import Note from "@/components/Note";
 import prisma from "@/lib/prisma-db";
 import { auth } from "@clerk/nextjs";
 import { Metadata } from "next";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "QuantumNotes - Notes",
